@@ -38,7 +38,24 @@ body {
   font-weight: 500;
   margin-top: 3vh;
 }
-
+#page1-something {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#page1-something h4 {
+  font-weight: 300;
+  font-size: 1vw;
+  text-transform: lowercase;
+  padding: 5px 12px;
+  margin-top: 0.5vw;
+  border: 1px solid #857575;
+  border-radius: 50px;
+}
+#page1-something h4:nth-last-child(2) {
+  border: none;
+  padding: 2px;
+}
 
 
 
