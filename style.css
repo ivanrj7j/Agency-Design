@@ -41,7 +41,9 @@ nav h1 {
 }
 .nav-part2 h5 {
   margin-bottom: 1vw;
-  opacity: 0;
+  /* background-color: red; */
+  display: none;
+  overflow: hidden;
 }
 .nav-part2 h5 span {
   font-size: 0.77vw;
