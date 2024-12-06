@@ -21,6 +21,8 @@ nav {
   width: 100%;
   padding: 2vw 10.4vw;
   justify-content: space-between;
+  background-color: #111;
+  z-index: 10;
 }
 nav h1 {
   font-size: 1.6vw;
@@ -51,22 +53,21 @@ nav h1 {
   display: inline-block;
 }
 
-
 nav button {
-    background-color: #0BA34E;
-    display: flex;
-    align-items: center;
-    padding: 14px 20px;
-    font-size: 0.85vw;
-    text-transform: uppercase;
-    font-weight: 700;
-    border-radius: 50px;
-    border: none;
+  background-color: #0ba34e;
+  display: flex;
+  align-items: center;
+  padding: 14px 20px;
+  font-size: 0.85vw;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 50px;
+  border: none;
 }
 
 nav button svg {
-    height: 0.8vw;
-    margin-left: 1.6vw;
+  height: 0.8vw;
+  margin-left: 1.6vw;
 }
 #nav-bottom {
   /* background-color: green; */
@@ -78,12 +79,6 @@ nav button svg {
   z-index: 9;
   border-bottom: 1px solid #fff;
 }
-
-
-
-
-
-
 
 #page1 {
   height: 100vh;
@@ -104,7 +99,7 @@ nav button svg {
   height: 6vw;
   width: 6vw;
   border-radius: 50%;
-  background-color: #489E58;
+  background-color: #489e58;
 }
 #page1 p {
   text-align: center;
@@ -129,6 +124,60 @@ nav button svg {
   border: none;
   padding: 2px;
 }
+
+#moving-div {
+  /* background-color: red; */
+  position: absolute;
+  bottom: 3%;
+  white-space: nowrap;
+  width: 45%;
+  padding: 1.2vw;
+  overflow: hidden;
+}
+#moving-div .move {
+  display: inline-block;
+  animation-name: move;
+  animation-duration: 11s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#moving-div .move img {
+  height: 1.5vw;
+  margin: 0 1.2vw;
+  filter: grayscale(100%);
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-100%);
+  }
+  
+}
+#blur-left {
+  background-color: red;
+  height: 100%;
+  width: 20%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: linear-gradient(to left, transparent, #111);
+}
+#blur-right {
+  background: linear-gradient(to right, transparent, #111);
+  height: 100%;
+  width: 20%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  
+}
+
+
 
 
 
