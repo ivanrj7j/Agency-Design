@@ -12,6 +12,14 @@ body {
   width: 100%;
 }
 
+
+
+
+
+
+
+
+
 nav {
   /* background-color: red; */
   position: fixed;
@@ -79,6 +87,12 @@ nav button svg {
   z-index: 9;
   border-bottom: 1px solid #fff;
 }
+
+
+
+
+
+
 
 #page1 {
   height: 100vh;
@@ -247,6 +261,11 @@ nav button svg {
 
 
 
+
+
+
+
+
 #page3 {
   height: 100vh;
   width: 100%;
@@ -304,4 +323,36 @@ nav button svg {
   opacity: 0;
   border-radius: 30px;
   z-index: 999;
+}
+
+
+
+
+
+
+
+
+#page4 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+}
+.section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5vh 10vw;
+}
+.sec-left {
+  background-color: aqua;
+  height: 80vh;
+  width: 30%;
+}
+.sec-right {
+  background-color: blanchedalmond;
+  height: 80vh;
+  width: 30%;
 }

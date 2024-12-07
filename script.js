@@ -94,6 +94,6 @@ function page3VideAnimation() {
 
 
 
-navAnimation();
-page2Animation();
-page3VideAnimation();
+// navAnimation();
+// page2Animation();
+// page3VideAnimation();
