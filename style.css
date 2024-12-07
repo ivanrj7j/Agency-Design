@@ -223,3 +223,23 @@ nav button svg {
   height: 100%;
   width: 45%;
 }
+.right-elem {
+  /* background-color: red; */
+  padding-top: 2vw;
+  padding-bottom: 5vw;
+  position: relative;
+  border-bottom: 1px solid #333;
+}
+.right-elem h1 {
+  font-size: 1.4vw;
+  font-weight: 400;
+}
+.right-elem img {
+  height : 7vw;
+  width: 7vw;
+  border-radius: 50%;
+  object-fit: cover;  
+  position: absolute;
+  opacity: 0;
+  scale: 0;
+}
