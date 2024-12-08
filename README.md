@@ -1,6 +1,6 @@
 # 🎨 A Creative Design Agency Website
 
-Welcome to the TOYBREAKER repository! 🚀 This project is a beautifully crafted website for a design agency, showcasing various areas of expertise in UI/UX and product design.
+🚀 This project is a beautifully crafted website for a design agency, showcasing various areas of expertise in UI/UX and product design.
 
 # 🌟 Features
 
