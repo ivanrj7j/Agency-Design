@@ -4,7 +4,7 @@ Welcome to the TOYBREAKER repository! 🚀 This project is a beautifully crafted
 
 # 🌟 Features
 
-= **Responsive Design:** The website is fully responsive, ensuring a seamless experience on all devices. 📱💻
+- **Responsive Design:** The website is fully responsive, ensuring a seamless experience on all devices. 📱💻
 - **Interactive Navigation:** Enjoy a smooth and engaging navigation experience with animated elements. 🧭✨
 - **Dynamic Content:** The site features sections for case studies, areas of expertise, and a showcase of design processes. 📚🎨
 - **Showreel Video:** Watch our stunning showreel to see our work in action! 🎥🔥
