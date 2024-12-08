@@ -21,7 +21,7 @@ To get a local copy up and running, follow these steps:
 
 - Clone the repository: 
 ```bash
-git clone https://github.com/yourusername/toybaker.git
+git clone https://github.com/Sushant98K/Creative-Design-Agency-Website
 ```
 - Navigate to the project directory: 
 ```bash
