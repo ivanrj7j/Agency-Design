@@ -88,12 +88,43 @@ function page3VideAnimation() {
 
 }
 
+function page4Animation() {
+  
+var sections = document.querySelectorAll(".sec-right");
+
+sections.forEach(function (elem) {
+  elem.addEventListener("mouseenter", function () {
+    elem.childNodes[3].style.opacity = 1;
+    elem.childNodes[3].play();
+    gsap.to(elem.childNodes[5], {
+      opacity: 1,
+      scale: 1,
+    });
+  });
+  elem.addEventListener("mouseleave", function () {
+    elem.childNodes[3].style.opacity = 0;
+    elem.childNodes[3].load();
+    gsap.to(elem.childNodes[5], {
+      opacity: 0,
+      scale: 0,
+    });
+  });
+  elem.addEventListener("mousemove", function (dets) {
+    gsap.to(elem.childNodes[5], {
+      x: dets.x - elem.getBoundingClientRect().x - 50,
+      y: dets.y - elem.getBoundingClientRect().y - 570,
+    });
+  });
+});
+}
 
 
 
 
 
 
-// navAnimation();
-// page2Animation();
-// page3VideAnimation();
+
+navAnimation();
+page2Animation();
+page3VideAnimation();
+page4Animation();
