@@ -1,3 +1,7 @@
+<h1 align="center">
+    <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=500&height=70&duration=4000&lines=Creative+Design+Agency+Website;" />
+</h1>
+
 # 🎨 A Creative Design Agency Website
 
 🚀 This project is a beautifully crafted website for a design agency, showcasing various areas of expertise in UI/UX and product design.
