@@ -475,4 +475,93 @@ nav button svg {
 }
 #page5-right {
   width: 70%;
+  position: relative;
+}
+#page5-right>p {
+  font-size: 2.1vw;
+}
+#page5-right>p span {
+  width: 15vw;
+  display: inline-block;
+}
+#page5-right>span {
+  position: absolute;
+  top: 3%;
+}
+#page5-content {
+  width: 100%;
+  margin-top: 5vh;
+  padding: 5vh 0;
+  border-top: 2px solid #fff;
+}
+#page5-content>h1 {
+  font-size: 3vw;
+}
+#page5-content #flex {
+  display: flex;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+}
+#page5-content #flex h4{
+  border: 1px solid #8a6c6c;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-weight: 400;
+  font-size: 0.8vw;
+}
+
+
+.page5-elem {
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+  padding-top: 3vh;
+  padding-bottom: 9vh;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  overflow: hidden;
+  border-top: 1px solid #333;
+  position: relative;
+}
+.page5-elem p {
+  width: 60%;
+  font-size: 0.8vw;
+  position: relative;
+  z-index: 8;
+}
+.page5-elem h3 {
+  font-size: 1.5vw;
+  font-weight: 400;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  position: relative;
+  z-index: 8;
+}
+.page5-elem i {
+  font-size: 1vw;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  position: relative;
+  z-index: 8;
+}
+.over {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #222;
+  top: 0;
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
+.page5-elem:hover h3 {
+  padding-left: 1vw;
+}
+.page5-elem:hover i{
+  padding-right: 1vw;
+}
+.page5-elem:hover .over {
+  transform: translateY(0);
+  opacity: 1;
+}
+.page5-elem:hover {
+  border-top: 2px solid #fff;
 }
