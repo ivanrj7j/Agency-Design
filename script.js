@@ -124,7 +124,7 @@ sections.forEach(function (elem) {
 
 
 
-navAnimation();
-page2Animation();
-page3VideAnimation();
-page4Animation();
+// navAnimation();
+// page2Animation();
+// page3VideAnimation();
+// page4Animation();

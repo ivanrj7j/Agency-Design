@@ -386,6 +386,7 @@ nav button svg {
   width: 100%;
   background-color: #fff;
   position: relative;
+  padding-bottom: 13vh;
 }
 .section {
     width: 100%;
@@ -450,4 +451,28 @@ nav button svg {
   /* position: absolute; */
   opacity: 0;
   scale: 0;
+}
+
+
+
+#page5 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #111;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 5vh 10.5vw;
+}
+#page5 button {
+  background-color: #0ba34e;
+  padding: 1vw 2.5vw;
+  font-weight: 400;
+  font-size: 1vw;
+  border-radius: 50px;
+  border: none;
+}
+#page5-right {
+  width: 70%;
 }
