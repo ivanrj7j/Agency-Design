@@ -472,6 +472,8 @@ nav button svg {
   font-size: 1vw;
   border-radius: 50px;
   border: none;
+  position: sticky;
+  top: 15%;
 }
 #page5-right {
   width: 70%;
@@ -492,10 +494,10 @@ nav button svg {
   width: 100%;
   margin-top: 5vh;
   padding: 5vh 0;
-  border-top: 2px solid #fff;
 }
-#page5-content>h1 {
+#page5-content h1 {
   font-size: 3vw;
+  font-weight: 500;
 }
 #page5-content #flex {
   display: flex;
@@ -564,4 +566,11 @@ nav button svg {
 }
 .page5-elem:hover {
   border-top: 2px solid #fff;
+}
+summary::marker {
+  content: "";
+}
+.uiux, .product {
+  border-top: 1px solid #333;
+  padding: 3vh 0;
 }
