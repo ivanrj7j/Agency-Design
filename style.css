@@ -574,3 +574,37 @@ summary::marker {
   border-top: 1px solid #333;
   padding: 3vh 0;
 }
+
+
+
+
+#page6 {
+  height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  padding: 10vh 10vw;
+}
+#page6>h1 {
+  font-size: 5.5vw;
+  padding-left: 23vw;
+  padding-right: 5vw;
+  color: #000;
+  line-height: 5.8vw;
+  padding-bottom: 10vh;
+  border-bottom: 1px solid #dadada;
+}
+#page6-content {
+  /* background-color: red; */
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+#page6-content #right-6 {
+  width: 70%;
+}
+#page6-content #right-6 p{
+  font-size: 1.5vw;
+  color: #000;
+  margin-bottom: 5vh;
+  width: 80%;
+}
