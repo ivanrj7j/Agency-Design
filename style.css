@@ -579,7 +579,7 @@ summary::marker {
 
 
 #page6 {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-color: #fff;
   padding: 10vh 10vw;
@@ -595,9 +595,11 @@ summary::marker {
 }
 #page6-content {
   /* background-color: red; */
+  color: #000;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  padding: 8vh 0;
 }
 #page6-content #right-6 {
   width: 70%;
@@ -607,4 +609,34 @@ summary::marker {
   color: #000;
   margin-bottom: 5vh;
   width: 80%;
+}
+#blue-btn {
+  background-color: #1a73e8;
+  width: 15vw;
+  height: 3.5vw;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#blue-btn h4 {
+  position: absolute;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.85vw;
+}
+#blue-btn h4 i {
+  font-weight: 100;
+  font-size: 1.1vw;
+  margin-left: 1vw;
+}
+
+#page6-bottom {
+  height: 45vh;
+  width: 100%;
+  background-color: red;
+  border-top: 1px solid #dadada;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
