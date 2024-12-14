@@ -195,16 +195,16 @@ function page6ScrollTrigger() {
 
 
 
-locomotiveAnimation();
+// locomotiveAnimation();
 
-loadingAnimation();
+// loadingAnimation();
 
-navAnimation();
+// navAnimation();
 
-page2Animation();
+// page2Animation();
 
-page3VideAnimation();
+// page3VideAnimation();
 
-page4Animation();
+// page4Animation();
 
-page6ScrollTrigger();
+// page6ScrollTrigger();
