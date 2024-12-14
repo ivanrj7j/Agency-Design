@@ -78,7 +78,7 @@ function page3VideAnimation() {
   });
 
   video.addEventListener("click", function () {
-    video.pause();
+    video.load();
     gsap.to(video, {
       transform: "scaleX(0.7) scaleY(0)",
       opacity: 0,
@@ -118,13 +118,28 @@ sections.forEach(function (elem) {
 });
 }
 
+function page6ScrollTrigger() {
+  gsap.from(".btm6-parts h4", {
+    x: 0,
+    duration: 1,
+    scrollTrigger: {
+      trigger: ".btm6-parts",
+      scroller: "body",
+      // markers: true,
+      start: "top 80%",
+      end: "top 10%",
+      scrub: true,
+    },
+  });
+}
 
 
 
 
 
 
-// navAnimation();
-// page2Animation();
-// page3VideAnimation();
-// page4Animation();
+navAnimation();
+page2Animation();
+page3VideAnimation();
+page4Animation();
+page6ScrollTrigger();
