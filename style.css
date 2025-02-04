@@ -6,6 +6,7 @@ Secondary: #4e19b7
 Tertiary: #3d1786
 background compliment: #2d1458
 background: #1b0f2e
+light background: #e8ddff
 */
 
 * {
@@ -192,8 +193,9 @@ nav button svg {
   text-transform: lowercase;
   padding: 5px 12px;
   margin-top: 0.5vw;
-  border: 1px solid #857575;
+  border: 1px solid #e8ddff;
   border-radius: 50px;
+  color: #e8ddff;
 }
 #page1-something h4:nth-last-child(2) {
   border: none;
@@ -396,7 +398,7 @@ nav button svg {
 #page4 {
   min-height: 100vh;
   width: 100%;
-  background-color: #fff;
+  background-color: #e8ddff;
   position: relative;
   padding-bottom: 13vh;
 }
@@ -593,7 +595,7 @@ summary::marker {
 #page6 {
   min-height: 100vh;
   width: 100%;
-  background-color: #fff;
+  background-color: #e8ddff;
   padding: 10vh 10vw;
 }
 #page6>h1 {
