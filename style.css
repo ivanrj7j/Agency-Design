@@ -1,3 +1,13 @@
+/*
+Palette
+
+Primary: #5e17eb
+Secondary: #4e19b7
+Tertiary: #3d1786
+background compliment: #2d1458
+background: #1b0f2e
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -30,7 +40,7 @@ nav {
   width: 100%;
   padding: 2vw 10.4vw;
   justify-content: space-between;
-  background-color: #111;
+  background-color: #1b0f2e;
   z-index: 10;
 }
 /* nav h1 {
@@ -110,7 +120,7 @@ nav {
 }
 
 nav button {
-  background-color: #0ba34e;
+  background-color: #5e17eb;
   display: flex;
   align-items: center;
   padding: 14px 20px;
@@ -129,7 +139,7 @@ nav button svg {
 
 #nav-bottom {
   /* background-color: green; */
-  background-color: #111;
+  background-color: #1b0f2e;
   width: 79%;
   height: 0vh;
   position: absolute;
@@ -148,7 +158,7 @@ nav button svg {
   height: 100vh;
   width: 100%;
   position: relative;
-  background-color: #111;
+  background-color: #1b0f2e;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -164,7 +174,7 @@ nav button svg {
   height: 6vw;
   width: 6vw;
   border-radius: 50%;
-  background-color: #489e58;
+  background-color: #4e19b7;
 }
 #page1 p {
   text-align: center;
@@ -229,10 +239,10 @@ nav button svg {
   top: 0;
   left: 0;
   z-index: 2;
-  background: linear-gradient(to left, transparent, #111);
+  background: linear-gradient(to left, transparent, #1b0f2e);
 }
 #blur-right {
-  background: linear-gradient(to right, transparent, #111);
+  background: linear-gradient(to right, transparent, #1b0f2e);
   height: 100%;
   width: 20%;
   position: absolute;
@@ -252,11 +262,11 @@ nav button svg {
 #page2 {
   height: 100vh;
   width: 100%;
-  background-color: #111;
+  background-color: #1b0f2e;
   position: relative;
   padding: 0vw 10.5vw;
   padding-bottom: 8vw;
-  border-top: 1px solid #333;
+  border-top: 1px solid #2d1458;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -293,7 +303,7 @@ nav button svg {
   padding-top: 2vw;
   padding-bottom: 5vw;
   position: relative;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #2d1458;
 }
 .right-elem h1 {
   font-size: 1.4vw;
@@ -320,7 +330,7 @@ nav button svg {
 #page3 {
   height: 100vh;
   width: 100%;
-  background-color: #111;
+  background-color: #1b0f2e;
   position: relative;
   background-image: url(https://lazarev.kiev.ua/la24/reel-cover.webp);
   background-size: cover;
@@ -460,7 +470,7 @@ nav button svg {
 #page5 {
   min-height: 100vh;
   width: 100%;
-  background-color: #111;
+  background-color: #1b0f2e;
   position: relative;
   display: flex;
   align-items: flex-start;
@@ -468,7 +478,7 @@ nav button svg {
   padding: 5vh 10.5vw;
 }
 #page5 button {
-  background-color: #0ba34e;
+  background-color: #5e17eb;
   padding: 1vw 2.5vw;
   font-weight: 400;
   font-size: 1vw;
@@ -613,7 +623,7 @@ summary::marker {
   width: 80%;
 }
 #blue-btn {
-  background-color: #1a73e8;
+  background-color: #5e17eb;
   width: 15vw;
   height: 3.5vw;
   border-radius: 100px;
@@ -676,7 +686,7 @@ summary::marker {
   margin-bottom: 4vh;
 }
 .btm6-parts h4 {
-  background-color: #111;
+  background-color: #5e17eb;
   display: flex;
   align-items: center;
   width: 75%;
@@ -744,7 +754,7 @@ summary::marker {
 
 
 #page7 {
-  background-color: #000;
+  background-color: #1b0f2e;
   height: 100vh;
   width: 100%;
 }
