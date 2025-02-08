@@ -1,3 +1,5 @@
+let navOpen = false;
+
 function loadingAnimation() {
   var tl = gsap.timeline();
   tl.from("#page1", {
@@ -24,9 +26,9 @@ function loadingAnimation() {
 }
 
 function navAnimation() {
-  var nav = document.querySelector("nav");
+  var button = document.querySelector(".hamburger");
 
-  nav.addEventListener("mouseenter", function () {
+  var openFunction = function () {
     let tl = gsap.timeline();
 
     tl.to("#nav-bottom", {
@@ -44,8 +46,8 @@ function navAnimation() {
         amount: 0.5,
       },
     });
-  });
-  nav.addEventListener("mouseleave", function () {
+  };
+  var closeFunction = function () {
     let tl = gsap.timeline();
     tl.to(".nav-part2 h5 span", {
       y: 25,
@@ -61,6 +63,16 @@ function navAnimation() {
       height: 0,
       duration: 0.2,
     });
+  };
+
+  button.addEventListener("click", function () {
+    if (!navOpen) {
+      openFunction();
+      navOpen = true;
+    } else {
+      closeFunction();
+      navOpen = false;
+    }
   });
 }
 

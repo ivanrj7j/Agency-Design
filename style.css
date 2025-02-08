@@ -16,6 +16,8 @@ light background: #e8ddff
   /* font-family: Arial, sans-serif; */
   font-family: "Gilroy-Regular";
   color: #fff;
+  
+  --fs-size: 3vw;
 }
 
 html,
@@ -64,14 +66,12 @@ nav {
 .logo {
   --border-right: 6px;
   --text-stroke-color: rgba(255, 255, 255, 0.6);
-  --animation-color: #37FF8B;
-  --fs-size: 2em;
+  --animation-color: #5e17eb;
   letter-spacing: 3px;
   text-decoration: none;
   font-size: var(--fs-size);
   font-family: "Arial";
   position: relative;
-  text-transform: uppercase;
   color: transparent;
   -webkit-text-stroke: 1px var(--text-stroke-color);
 }
@@ -130,19 +130,15 @@ nav button {
   background-color: #5e17eb;
   display: flex;
   align-items: center;
-  padding: 14px 20px;
   font-size: 0.85vw;
-  text-transform: uppercase;
   font-weight: 700;
-  border-radius: 50px;
+  border-radius: 15%;
   border: none;
+  height: fit-content;
+  font-size: var(--fs-size);
+  padding: 2px;
+  cursor: pointer;
 }
-
-nav button svg {
-  height: 0.8vw;
-  margin-left: 1.6vw;
-}
-
 
 #nav-bottom {
   /* background-color: green; */
@@ -785,6 +781,10 @@ summary::marker {
 
 .primary {
   color: #5e17eb;
+}
+
+.secondary{
+  color:#4e19b7;
 }
 
 @media screen and (max-width: 792px) {
