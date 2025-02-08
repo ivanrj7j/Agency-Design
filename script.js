@@ -44,7 +44,7 @@ function loadingAnimation() {
   tl.from("#page1", {
     transform: "scaleX(0.7) scaleY(0.2) translateY(80%)",
     borderRadius: "150px",
-    duration: 2,
+    duration: 0.8,
     ease: "expo.out",
   });
   tl.from("nav", {
@@ -100,31 +100,6 @@ function navAnimation() {
   });
 }
 
-function page2Animation() {
-  var rightElems = document.querySelectorAll(".right-elem");
-
-  rightElems.forEach(function (elem) {
-    elem.addEventListener("mouseenter", function () {
-      gsap.to(elem.childNodes[3], {
-        opacity: 1,
-        scale: 1,
-      });
-    });
-    elem.addEventListener("mouseleave", function () {
-      gsap.to(elem.childNodes[3], {
-        opacity: 0,
-        scale: 0,
-      });
-    });
-    elem.addEventListener("mousemove", function (dets) {
-      gsap.to(elem.childNodes[3], {
-        x: dets.x - elem.getBoundingClientRect().x - 70,
-        y: dets.y - elem.getBoundingClientRect().y - 165,
-      });
-    });
-  });
-}
-
 function page3VideAnimation() {
   var page3Center = document.querySelector(".page3-center");
   var video = document.querySelector("#page3 video");
@@ -148,35 +123,6 @@ function page3VideAnimation() {
   });
 }
 
-function page4Animation() {
-  var sections = document.querySelectorAll(".sec-right");
-
-  sections.forEach(function (elem) {
-    elem.addEventListener("mouseenter", function () {
-      elem.childNodes[3].style.opacity = 1;
-      elem.childNodes[3].play();
-      gsap.to(elem.childNodes[5], {
-        opacity: 1,
-        scale: 1,
-      });
-    });
-    elem.addEventListener("mouseleave", function () {
-      elem.childNodes[3].style.opacity = 0;
-      elem.childNodes[3].load();
-      gsap.to(elem.childNodes[5], {
-        opacity: 0,
-        scale: 0,
-      });
-    });
-    elem.addEventListener("mousemove", function (dets) {
-      gsap.to(elem.childNodes[5], {
-        x: dets.x - elem.getBoundingClientRect().x - 50,
-        y: dets.y - elem.getBoundingClientRect().y - 570,
-      });
-    });
-  });
-}
-
 function page6ScrollTrigger() {
   gsap.from(".btm6-parts h4", {
     x: 0,
@@ -193,12 +139,8 @@ function page6ScrollTrigger() {
 }
 
 
-
-
 locomotiveAnimation();
 loadingAnimation();
 navAnimation();
-page2Animation();
 page3VideAnimation();
-page4Animation();
 page6ScrollTrigger();
