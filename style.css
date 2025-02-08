@@ -199,18 +199,27 @@ nav button svg {
 
 #page1-something h4 {
   font-weight: 300;
-  font-size: 1vw;
+  font-size: 1.2vw;
   text-transform: lowercase;
   padding: 5px 12px;
-  margin-top: 0.5vw;
+  margin: 0.5vw;
   border: 1px solid #e8ddff;
   border-radius: 50px;
   color: #e8ddff;
+  transition: 0.2s ease-in;
+}
+
+#page1-something h4:hover{
+  background-color: #4e19b7;
 }
 
 #page1-something h4:nth-last-child(2) {
   border: none;
   padding: 2px;
+}
+
+#page1-something h4:nth-last-child(2):hover{
+  background-color: transparent;
 }
 
 #moving-div {
@@ -268,56 +277,6 @@ nav button svg {
   right: 0;
   z-index: 2;
 
-}
-
-
-
-
-
-
-
-
-#page2 {
-  height: 100vh;
-  width: 100%;
-  background-color: #1b0f2e;
-  position: relative;
-  padding: 0vw 10.5vw;
-  padding-bottom: 8vw;
-  border-top: 1px solid #2d1458;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-#page2-left {
-  /* background-color: #444; */
-  height: 100%;
-  width: 45%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  flex-direction: column;
-  padding: 3vw 0;
-}
-
-#page2-left p {
-  font-size: 0.8vw;
-}
-
-#page2-left h5 {
-  width: 75%;
-  font-weight: 400;
-  font-size: 1.1vw;
-}
-
-
-
-
-#page2-right {
-  /* background-color: #444; */
-  height: 100%;
-  width: 45%;
 }
 
 .right-elem {
@@ -625,6 +584,7 @@ nav button svg {
 
 .page5-elem:hover {
   border-top: 2px solid #fff;
+  background-color: #2d1458;
 }
 
 summary::marker {
@@ -826,3 +786,21 @@ summary::marker {
 .primary {
   color: #5e17eb;
 }
+
+@media screen and (max-width: 792px) {
+  #page1-something h4{
+    font-size: 9.504px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  #page1-something h4{
+    font-size: 6px;
+  }
+}
+
+/* @media screen and (max-width: 380px) {
+  #page1-something h4{
+    font-size: 6px;
+  }
+} */
