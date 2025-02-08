@@ -16,7 +16,7 @@ light background: #e8ddff
   /* font-family: Arial, sans-serif; */
   font-family: "Gilroy-Regular";
   color: #fff;
-  
+
   --fs-size: 3vw;
 }
 
@@ -205,7 +205,7 @@ nav button {
   transition: 0.2s ease-in;
 }
 
-#page1-something h4:hover{
+#page1-something h4:hover {
   background-color: #4e19b7;
 }
 
@@ -214,7 +214,7 @@ nav button {
   padding: 2px;
 }
 
-#page1-something h4:nth-last-child(2):hover{
+#page1-something h4:nth-last-child(2):hover {
   background-color: transparent;
 }
 
@@ -387,7 +387,6 @@ nav button {
 
 .section {
   width: 100%;
-  height: 72vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -783,18 +782,64 @@ summary::marker {
   color: #5e17eb;
 }
 
-.secondary{
-  color:#4e19b7;
+.secondary {
+  color: #4e19b7;
+}
+
+.cta{
+  display: flex;
 }
 
 @media screen and (max-width: 792px) {
-  #page1-something h4{
+  #page1-something h4 {
     font-size: 9.504px;
+  }
+
+  #page4 > .section {
+    display: block;
+  }
+
+  #page4 > .section > .sec-left {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+
+  #page4 > .section > .sec-right {
+    width: 90%;
+  }
+
+  #page4 >.section >.sec-left > h2 {
+    font-size: 2em;
+  }
+
+  
+
+  #page4 >.section >.sec-left > p {
+    font-size: 1.2em;
+  }
+
+  #page5{
+    display: block;
+  }
+
+  #page5 button {
+    font-size: 2em;
+    position: static;
+    margin-bottom: 10px;
+  }
+
+  .cta{
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #page5-right {
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 520px) {
-  #page1-something h4{
+  #page1-something h4 {
     font-size: 6px;
   }
 }
