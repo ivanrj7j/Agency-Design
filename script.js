@@ -49,12 +49,7 @@ function navAnimation() {
   };
   var closeFunction = function () {
     let tl = gsap.timeline();
-    tl.to(".nav-part2 h5 span", {
-      y: 25,
-      stagger: {
-        amount: 0.2,
-      },
-    });
+    
     tl.to(".nav-part2 h5", {
       display: "none",
       duration: 0.1,
