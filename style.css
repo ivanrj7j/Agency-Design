@@ -790,6 +790,10 @@ summary::marker {
   display: flex;
 }
 
+.hamburger{
+  display: none;
+}
+
 @media screen and (max-width: 1100px) {
   #page1-something h4 {
     font-size: 9.504px;
@@ -864,6 +868,14 @@ summary::marker {
   }
 
   #page6-bottom{
+    display: none;
+  }
+
+  .hamburger{
+    display: block;
+  }
+
+  .nav-part2{
     display: none;
   }
 }
