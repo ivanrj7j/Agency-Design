@@ -16,7 +16,7 @@
   box-sizing: border-box;
   font-family: "Gilroy-Regular";
   color: var(--text-color);
-  --fs-size: 3vw;
+  --fs-size: 1.7rem;
 }
 
 html,
@@ -29,8 +29,8 @@ body {
 nav {
   position: fixed;
   display: flex;
-  align-items: flex-start;
-  height: 12vh;
+  align-items: center;
+  height: 60px;
   width: 100%;
   padding: 2vw 10.4vw;
   justify-content: space-between;
@@ -174,7 +174,7 @@ nav button {
 
 #page1-something h4 {
   font-weight: 300;
-  font-size: 1.2vw;
+  font-size: 2rem;
   text-transform: lowercase;
   padding: 5px 12px;
   margin: 0.5vw;
@@ -739,10 +739,22 @@ summary::marker {
   display: flex;
 }
 
+.bottom-nav-items{
+  display: none;
+  justify-content: right;
+  text-align: right;
+}
+
+.bottom-nav-items a{
+  margin: 11px 4px;
+  padding: 3px;
+  font-size: 1.4rem;
+}
+
 /* Media Queries */
 @media screen and (max-width: 1100px) {
   #page1-something h4 {
-    font-size: 9.504px;
+    font-size: 20px;
   }
 
   #page4>.section {
@@ -826,7 +838,7 @@ summary::marker {
 
 @media screen and (max-width: 520px) {
   #page1-something h4 {
-    font-size: 6px;
+    font-size: 8px;
   }
 
   .page5-elem {

@@ -27,8 +27,10 @@ function loadingAnimation() {
 
 function navAnimation() {
   var button = document.querySelector(".hamburger");
+  var navItems = document.querySelector(".bottom-nav-items");
 
   var openFunction = function () {
+    navItems.style.display = "grid";
     let tl = gsap.timeline();
 
     tl.to("#nav-bottom", {
@@ -48,6 +50,7 @@ function navAnimation() {
     });
   };
   var closeFunction = function () {
+    navItems.style.display = "none";
     let tl = gsap.timeline();
     
     tl.to(".nav-part2 h5", {
@@ -65,6 +68,13 @@ function navAnimation() {
       openFunction();
       navOpen = true;
     } else {
+      closeFunction();
+      navOpen = false;
+    }
+  });
+
+  window.addEventListener("resize", function () {
+    if (this.window.innerWidth >= 1100 && navOpen){
       closeFunction();
       navOpen = false;
     }
