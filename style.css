@@ -1,22 +1,21 @@
-/*
-Palette
+/* :root defines the global color variables for the entire project */
+:root {
+  --primary-color: #5e17eb;
+  --secondary-color: #4e19b7;
+  --tertiary-color: #3d1786;
+  --background-compliment: #2d1458;
+  --background-color: #1b0f2e;
+  --light-background: #e8ddff;
+  --text-color: #fff;
+}
 
-Primary: #5e17eb
-Secondary: #4e19b7
-Tertiary: #3d1786
-background compliment: #2d1458
-background: #1b0f2e
-light background: #e8ddff
-*/
-
+/* General Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: Arial, sans-serif; */
   font-family: "Gilroy-Regular";
-  color: #fff;
-
+  color: var(--text-color);
   --fs-size: 3vw;
 }
 
@@ -26,16 +25,8 @@ body {
   width: 100%;
 }
 
-
-
-
-
-
-
-
-
+/* Navigation */
 nav {
-  /* background-color: red; */
   position: fixed;
   display: flex;
   align-items: flex-start;
@@ -43,16 +34,14 @@ nav {
   width: 100%;
   padding: 2vw 10.4vw;
   justify-content: space-between;
-  background-color: #1b0f2e;
+  background-color: var(--background-color);
   z-index: 10;
 }
 
-/* nav h1 {
-  font-size: 1.6vw;
-} */
+nav a{
+  text-decoration: none;
+}
 
-/* From Uiverse.io by satyamchaudharydev */
-/* === removing default button style ===*/
 .logo {
   margin: 0;
   height: auto;
@@ -60,13 +49,9 @@ nav {
   padding: 0;
   border: none;
   cursor: pointer;
-}
-
-/* button styling */
-.logo {
   --border-right: 6px;
   --text-stroke-color: rgba(255, 255, 255, 0.6);
-  --animation-color: #5e17eb;
+  --animation-color: var(--primary-color);
   letter-spacing: 3px;
   text-decoration: none;
   font-size: var(--fs-size);
@@ -76,7 +61,6 @@ nav {
   -webkit-text-stroke: 1px var(--text-stroke-color);
 }
 
-/* this is the text, when you hover on button */
 .hover-text {
   position: absolute;
   box-sizing: border-box;
@@ -90,12 +74,10 @@ nav {
   -webkit-text-stroke: 1px var(--animation-color);
 }
 
-/* hover */
 .logo:hover .hover-text {
   width: 100%;
   filter: drop-shadow(0 0 23px var(--animation-color))
 }
-
 
 .nav-part2 {
   display: flex;
@@ -115,7 +97,6 @@ nav {
 
 .nav-part2 h5 {
   margin-bottom: 1vw;
-  /* background-color: red; */
   display: none;
   overflow: hidden;
 }
@@ -127,7 +108,7 @@ nav {
 }
 
 nav button {
-  background-color: #5e17eb;
+  background-color: var(--primary-color);
   display: flex;
   align-items: center;
   font-size: 0.85vw;
@@ -141,27 +122,25 @@ nav button {
 }
 
 #nav-bottom {
-  /* background-color: green; */
-  background-color: #1b0f2e;
+  background-color: var(--background-color);
   width: 79%;
   height: 0vh;
   position: absolute;
   top: 100%;
   z-index: 9;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid var(--text-color);
 }
 
+.hamburger{
+  display: none;
+}
 
-
-
-
-
-
+/* Page 1 */
 #page1 {
   height: 100vh;
   width: 100%;
   position: relative;
-  background-color: #1b0f2e;
+  background-color: var(--background-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -178,7 +157,7 @@ nav button {
   height: 6vw;
   width: 6vw;
   border-radius: 50%;
-  background-color: #4e19b7;
+  background-color: var(--secondary-color);
 }
 
 #page1 p {
@@ -199,14 +178,14 @@ nav button {
   text-transform: lowercase;
   padding: 5px 12px;
   margin: 0.5vw;
-  border: 1px solid #e8ddff;
+  border: 1px solid var(--light-background);
   border-radius: 50px;
-  color: #e8ddff;
+  color: var(--light-background);
   transition: 0.2s ease-in;
 }
 
 #page1-something h4:hover {
-  background-color: #4e19b7;
+  background-color: var(--secondary-color);
 }
 
 #page1-something h4:nth-last-child(2) {
@@ -219,7 +198,6 @@ nav button {
 }
 
 #moving-div {
-  /* background-color: red; */
   position: absolute;
   bottom: 3%;
   white-space: nowrap;
@@ -261,26 +239,25 @@ nav button {
   top: 0;
   left: 0;
   z-index: 2;
-  background: linear-gradient(to left, transparent, #1b0f2e);
+  background: linear-gradient(to left, transparent, var(--background-color));
 }
 
 #blur-right {
-  background: linear-gradient(to right, transparent, #1b0f2e);
+  background: linear-gradient(to right, transparent, var(--background-color));
   height: 100%;
   width: 20%;
   position: absolute;
   top: 0;
   right: 0;
   z-index: 2;
-
 }
 
+/* Page 2 (Right Element) */
 .right-elem {
-  /* background-color: red; */
   padding-top: 2vw;
   padding-bottom: 5vw;
   position: relative;
-  border-bottom: 1px solid #2d1458;
+  border-bottom: 1px solid var(--background-compliment);
 }
 
 .right-elem h1 {
@@ -298,18 +275,11 @@ nav button {
   scale: 0;
 }
 
-
-
-
-
-
-
-
-
+/* Page 3 */
 #page3 {
   height: 100vh;
   width: 100%;
-  background-color: #1b0f2e;
+  background-color: var(--background-color);
   position: relative;
   background-image: url(https://lazarev.kiev.ua/la24/reel-cover.webp);
   background-size: cover;
@@ -319,7 +289,6 @@ nav button {
 }
 
 .page3-center {
-  /* background-color: red; */
   display: flex;
   align-items: center;
   padding: 1vw;
@@ -327,7 +296,7 @@ nav button {
 }
 
 .page3-center .icon {
-  background-color: #fff;
+  background-color: var(--text-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -341,7 +310,7 @@ nav button {
 }
 
 .page3-center h5 {
-  background-color: #fff;
+  background-color: var(--text-color);
   color: #000;
   border-radius: 50px;
   font-size: 0.8vw;
@@ -370,17 +339,11 @@ nav button {
   z-index: 999;
 }
 
-
-
-
-
-
-
-
+/* Page 4 */
 #page4 {
   min-height: 100vh;
   width: 100%;
-  background-color: #e8ddff;
+  background-color: var(--light-background);
   position: relative;
   padding-bottom: 13vh;
 }
@@ -398,9 +361,7 @@ nav button {
   height: 100%;
   width: 25%;
   padding-top: 3vh;
-  /* background-color: aqua; */
   border-top: 2px solid #000;
-
 }
 
 .sec-left h2 {
@@ -413,7 +374,6 @@ nav button {
   color: #000;
   margin-top: 10vh;
   font-size: 1.2vw;
-  /* width: 80%; */
 }
 
 .sec-right {
@@ -445,17 +405,15 @@ nav button {
   width: 7vw;
   border-radius: 50%;
   object-fit: cover;
-  /* position: absolute; */
   opacity: 0;
   scale: 0;
 }
 
-
-
+/* Page 5 */
 #page5 {
   min-height: 100vh;
   width: 100%;
-  background-color: #1b0f2e;
+  background-color: var(--background-color);
   position: relative;
   display: flex;
   align-items: flex-start;
@@ -464,7 +422,7 @@ nav button {
 }
 
 #page5 button {
-  background-color: #5e17eb;
+  background-color: var(--primary-color);
   padding: 1vw 2.5vw;
   font-weight: 400;
   font-size: 1vw;
@@ -517,7 +475,6 @@ nav button {
   font-weight: 400;
   font-size: 0.8vw;
 }
-
 
 .page5-elem {
   display: flex;
@@ -578,8 +535,8 @@ nav button {
 }
 
 .page5-elem:hover {
-  border-top: 2px solid #fff;
-  background-color: #2d1458;
+  border-top: 2px solid var(--text-color);
+  background-color: var(--background-compliment);
 }
 
 summary::marker {
@@ -592,13 +549,11 @@ summary::marker {
   padding: 3vh 0;
 }
 
-
-
-
+/* Page 6 */
 #page6 {
   min-height: 100vh;
   width: 100%;
-  background-color: #e8ddff;
+  background-color: var(--light-background);
   padding: 10vh 10vw;
 }
 
@@ -613,7 +568,6 @@ summary::marker {
 }
 
 #page6-content {
-  /* background-color: red; */
   color: #000;
   display: flex;
   align-items: flex-start;
@@ -633,7 +587,7 @@ summary::marker {
 }
 
 #blue-btn {
-  background-color: #5e17eb;
+  background-color: var(--primary-color);
   width: 15vw;
   height: 3.5vw;
   border-radius: 100px;
@@ -658,7 +612,6 @@ summary::marker {
 #page6-bottom {
   height: 45vh;
   width: 100%;
-  /* background-color: red; */
   border-top: 1px solid #dadada;
   display: flex;
   align-items: flex-start;
@@ -706,7 +659,7 @@ summary::marker {
 }
 
 .btm6-parts h4 {
-  background-color: #5e17eb;
+  background-color: var(--primary-color);
   display: flex;
   align-items: center;
   width: 75%;
@@ -728,7 +681,6 @@ summary::marker {
   padding: .5vw;
   border-radius: 50%;
 }
-
 
 #btm6-part2 h4:nth-child(2) {
   transform: translate(0);
@@ -754,7 +706,6 @@ summary::marker {
   transform: translate(50%);
 }
 
-
 #btm6-part3 h4:nth-child(2) {
   transform: translate(0);
 }
@@ -762,7 +713,6 @@ summary::marker {
 #btm6-part3 h4:nth-child(3) {
   transform: translate(20%);
 }
-
 
 #btm6-part4 h4:nth-child(2) {
   transform: translate(0);
@@ -776,24 +726,20 @@ summary::marker {
   transform: translate(40%);
 }
 
-/* CUSTOM CSS START HERE  */
-
+/* Custom CSS */
 .primary {
-  color: #5e17eb;
+  color: var(--primary-color);
 }
 
 .secondary {
-  color: #4e19b7;
+  color: var(--secondary-color);
 }
 
 .cta {
   display: flex;
 }
 
-.hamburger{
-  display: none;
-}
-
+/* Media Queries */
 @media screen and (max-width: 1100px) {
   #page1-something h4 {
     font-size: 9.504px;
@@ -815,8 +761,6 @@ summary::marker {
   #page4>.section>.sec-left>h2 {
     font-size: 2em;
   }
-
-
 
   #page4>.section>.sec-left>p {
     font-size: 1.2em;
@@ -908,9 +852,3 @@ summary::marker {
     font-size: 0.5em;
   }
 }
-
-/* @media screen and (max-width: 380px) {
-  #page1-something h4{
-    font-size: 6px;
-  }
-} */
