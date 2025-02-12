@@ -1,0 +1,124 @@
+/* buy.css */
+
+body, html {
+    height: 100%; /* Make sure the body and html take up the full height */
+    margin: 0;
+    padding: 0;
+  }
+  
+  #buy-main {
+    width: 100%;
+    min-height: 100vh; /* Ensure the content takes at least the full viewport height */
+    background-color: var(--background-color);
+    padding: 20px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+  
+  #buy-page1 {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .buyTitle h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  .buyTitle p {
+    font-size: 1.2em;
+    color: var(--light-background);
+  }
+  
+  #buy-page2 {
+    padding: 20px;
+    box-sizing: border-box; /* ensure padding is calculated inside the element */
+  }
+  
+  .plan-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .plan-card {
+    width: 30%;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: var(--background-compliment);
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-sizing: border-box; /* ensure padding is calculated inside the element */
+  }
+  
+  .plan-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .plan-card.recommended {
+    border: 2px solid var(--primary-color);
+  }
+  
+  .plan-card h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .plan-card .price {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+  }
+  
+  .plan-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    box-sizing: border-box; /* ensure padding is calculated inside the element */
+  }
+  
+  .plan-card li {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+  }
+  
+  .plan-card button {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .plan-card button:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 768px) {
+    .plan-card {
+      width: 90%;
+      margin: 0px auto;
+      margin-bottom: 10px;
+    }
+  
+    .buyTitle h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+  
+    #buy-page2 {
+      display: block;
+    }
+  
+    .plan-info,
+    .plan-card {
+      width: 90%;
+      margin: 0px auto;
+      margin-bottom: 10px;
+    }
+  }
