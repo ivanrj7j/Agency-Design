@@ -56,8 +56,8 @@
   width: 100%;
   height: 100%;
   border: none;
-  pointer-events: none;
-  overflow: hidden; /* Important: Ensure overflow is hidden */
+  pointer-events: auto; /* Allow interaction with iframe content */
+  overflow: auto; /* Enable scrolling */
 }
 
 /* Hide scrollbars in iframe (Improved CSS) */
@@ -76,6 +76,23 @@
     height: 100%;
     width: 100%;
     overflow: hidden;
+}
+
+iframe {
+  overflow: auto; /* Ensure scrolling is enabled */
+  pointer-events: auto; /* Allow interaction */
+}
+
+iframe::-webkit-scrollbar,
+iframe::-webkit-scrollbar-thumb,
+iframe::-webkit-scrollbar-track {
+  /* Remove any custom scrollbar styles */
+  all: unset;
+}
+
+iframe {
+  scrollbar-width: auto; /* Default for Firefox */
+  scrollbar-color: auto; /* Default for Firefox */
 }
 
 /* Media Queries */
